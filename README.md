@@ -28,13 +28,13 @@ If you value Cursor's contributions, please support the official version and pay
 2. Completely close Cursor IDE.
 3. Open Command Prompt or PowerShell with Administrator privileges.
 4. Copy and paste the following command into the terminal:
-   ```powershell
-   powershell -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]:: SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iwr -Uri 'https://raw.githubusercontent.com/hamflx/cursor-reset/main/reset.ps1' -UseBasicParsing | iex"
+   ```bash
+       powershell -ExecutionPolicy Bypass -Command "[Net.ServicePointManager]:: SecurityProtocol = [Net.SecurityProtocolType]::Tls12; iwr -Uri 'https://raw.githubusercontent.com/hamflx/cursor-reset/main/reset.ps1' -UseBasicParsing | iex"
    ```
 5. After the reset is complete, open Cursor IDE and log in with a new account (do not use the previous account).
    
 If the script gets stuck at "Waiting for Cursor process to exit...", force-terminate all Cursor processes by running the following command:
-```powershell
+```bash
 taskkill /f /im cursor.exe
 ```
 
